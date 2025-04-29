@@ -1,0 +1,206 @@
+/* Estilos principales organizados por secciones */
+
+@import '../base/variables.scss';
+
+/* Estilos globales */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+font-family: $font-stack;
+font-size: $base-font-size;
+color: $color-text;
+background-color: $color-bg;
+line-height: 1.6;
+}
+
+/* Navegación principal en el header */
+header {
+background-color: $color-purple;
+color: white;
+/* Flexbox para centrar horizontalmente el contenido del header en pantallas grandes */
+@media (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Paddings y colores */
+padding: $spacing-medium;
+}
+
+/* Estilos para el logo y título principal si existiera */
+header .hero {
+text-align: center;
+}
+
+/* Menú de navegación */
+nav ul {
+list-style: none;
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+gap: $spacing-medium;
+}
+
+nav a {
+color: white;
+text-decoration: none;
+font-weight: bold;
+}
+
+nav a:hover {
+text-decoration: underline;
+}
+
+/* Sección Sobre mí (#perfil) */
+#perfil {
+padding: $spacing-large $spacing-medium;
+/* Flexbox para alinear la imagen de perfil y el contenido */
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: $spacing-medium;
+}
+#perfil h2 {
+margin-bottom: $spacing-medium;
+color: $color-purple;
+}
+#perfil .foto-perfil {
+width: 150px;
+height: 150px;
+border-radius: 50%;
+object-fit: cover;
+}
+#perfil .contenido-perfil {
+max-width: 600px;
+}
+#perfil .redes-sociales {
+display: flex;
+gap: $spacing-medium;
+margin-top: $spacing-small;
+}
+#perfil .redes-sociales img {
+width: 24px;
+height: 24px;
+}
+
+/* Sección Habilidades */
+#habilidades {
+padding: $spacing-large $spacing-medium;
+}
+#habilidades h2 {
+margin-bottom: $spacing-medium;
+color: $color-green;
+}
+#habilidades .lista-habilidades {
+list-style: square inside;
+max-width: 600px;
+margin: 0 auto;
+}
+#habilidades li {
+margin-bottom: $spacing-small;
+}
+
+/* Sección Experiencia */
+#experiencia {
+padding: $spacing-large $spacing-medium;
+}
+#experiencia h2 {
+margin-bottom: $spacing-medium;
+color: $color-purple;
+}
+#experiencia article {
+margin-bottom: $spacing-medium;
+}
+#experiencia h3 {
+color: $color-green;
+}
+
+/* Sección Educación */
+#educacion {
+padding: $spacing-large $spacing-medium;
+}
+#educacion h2 {
+margin-bottom: $spacing-medium;
+color: $color-purple;
+}
+#educacion article {
+margin-bottom: $spacing-medium;
+}
+#educacion h3 {
+color: $color-green;
+}
+
+/* Sección Portafolio */
+#portafolio {
+padding: $spacing-large $spacing-medium;
+}
+#portafolio h2 {
+margin-bottom: $spacing-medium;
+color: $color-purple;
+}
+#portafolio .proyectos {
+/* Uso de Grid para mostrar los proyectos en una cuadrícula adaptable */
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+gap: $spacing-medium;
+}
+#portafolio .proyectos article {
+background-color: white;
+padding: $spacing-small;
+border-radius: $border-radius;
+box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+#portafolio .proyectos img {
+width: 100%;
+border-radius: $border-radius;
+}
+
+/* Sección Contacto */
+#contacto {
+padding: $spacing-large $spacing-medium;
+}
+#contacto h2 {
+margin-bottom: $spacing-medium;
+color: $color-green;
+}
+#contacto form {
+display: flex;
+flex-direction: column;
+max-width: 400px;
+margin: 0 auto;
+gap: $spacing-small;
+}
+#contacto label {
+margin-bottom: $spacing-small;
+}
+#contacto input,
+#contacto textarea {
+padding: $spacing-small;
+border: 1px solid $color-text;
+border-radius: $border-radius;
+}
+#contacto button {
+margin-top: $spacing-small;
+padding: $spacing-medium;
+border: none;
+background-color: $color-green;
+color: white;
+font-weight: bold;
+border-radius: $border-radius;
+cursor: pointer;
+}
+#contacto button:hover {
+background-color: darken($color-green, 10%);
+}
+
+/* Pie de página (footer) */
+footer {
+text-align: center;
+padding: $spacing-medium;
+background-color: $color-purple;
+color: white;
+}
