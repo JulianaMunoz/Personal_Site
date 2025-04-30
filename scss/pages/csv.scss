@@ -15,34 +15,53 @@ font-size: $base-font-size;
 color: $color-text;
 background-color: $color-bg;
 line-height: 1.6;
+min-height: 100vh;
 }
 
 /* Navegación principal en el header */
 header {
-background-color: $color-purple;
-color: white;
-/* Flexbox para centrar horizontalmente el contenido del header en pantallas grandes */
-@media (min-width: 768px) {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    background-color: $color-purple;
+    color: white;
     align-items: center;
-}
-/* Paddings y colores */
-padding: $spacing-medium;
+    justify-content: center;
+    // /* Flexbox para centrar horizontalmente el contenido del header en pantallas grandes */
+    // @media (min-width: 768px) {
+    //     display: flex;
+    //     justify-content: space-between;
+    //     align-items: center;
+    // }
+    // /* Paddings y colores */
+    padding: $spacing-medium;
+    grid-area: header;
+    height: 100vh;
+    width: 400px; 
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    z-index: 1000;
 }
 
 /* Estilos para el logo y título principal si existiera */
 header .hero {
-text-align: center;
+    padding-top: $spacing-medium;
+    padding-bottom: $spacing-medium;
+    text-align: center;
+
 }
 
 /* Menú de navegación */
 nav ul {
 list-style: none;
 display: flex;
-justify-content: center;
+flex-direction: column;
+align-items: center;
 flex-wrap: wrap;
 gap: $spacing-medium;
+padding-top: $spacing-medium;
 }
 
 nav a {
@@ -53,6 +72,11 @@ font-weight: bold;
 
 nav a:hover {
 text-decoration: underline;
+}
+
+main{
+    margin-left: 400px;
+    padding: $spacing-medium;
 }
 
 /* Sección Sobre mí (#perfil) */
@@ -68,7 +92,7 @@ gap: $spacing-medium;
 margin-bottom: $spacing-medium;
 color: $color-purple;
 }
-#perfil .foto-perfil {
+.foto-perfil {
 width: 150px;
 height: 150px;
 border-radius: 50%;
@@ -77,6 +101,7 @@ object-fit: cover;
 #perfil .contenido-perfil {
 max-width: 600px;
 }
+
 #perfil .redes-sociales {
 display: flex;
 gap: $spacing-medium;
@@ -84,13 +109,16 @@ margin-top: $spacing-small;
 justify-content: center;
 }
 #perfil .redes-sociales img {
-width: 24px;
-height: 24px;
+width: 26px;
+height: 26px;
 }
 
 /* Sección Habilidades */
 #habilidades {
 padding: $spacing-large $spacing-medium;
+display: flex;
+flex-direction: column;
+align-items: center;
 }
 #habilidades h2 {
 margin-bottom: $spacing-medium;
@@ -200,8 +228,10 @@ background-color: darken($color-green, 10%);
 
 /* Pie de página (footer) */
 footer {
-text-align: center;
-padding: $spacing-medium;
-background-color: $color-purple;
-color: white;
+    text-align: center;
+    padding: $spacing-medium;
+    background-color: $color-purple;
+    color: white;
+    
+    margin-left: 400px;
 }
