@@ -376,7 +376,7 @@ header {
     left: 0;
     width: 100%;
     height: auto;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
     padding: $spacing-small;
@@ -392,13 +392,14 @@ footer {
     margin-left: 0;
 }
 
-header img {
-    width: 40px;
-    height: 40px;
+.foto-perfil {
+    width: 0px;
+    height: 0px;
 }
 
-header nav {
+header nav ul{
     flex-direction: row;
+    flex-wrap: wrap;
     gap: $spacing-small;
 }
 
