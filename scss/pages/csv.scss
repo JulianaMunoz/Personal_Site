@@ -26,13 +26,7 @@ header {
     color: white;
     align-items: center;
     justify-content: center;
-    // /* Flexbox para centrar horizontalmente el contenido del header en pantallas grandes */
-    // @media (min-width: 768px) {
-    //     display: flex;
-    //     justify-content: space-between;
-    //     align-items: center;
-    // }
-    // /* Paddings y colores */
+    /* Paddings y colores */
     padding: $spacing-medium;
     grid-area: header;
     height: 100vh;
@@ -372,3 +366,84 @@ footer {
     
     margin-left: 400px;
 }
+
+
+/*Responsive changes*/
+@media (max-width: 768px) {
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: $spacing-small;
+    z-index: 1000;
+}
+
+main {
+    margin-left: 0;
+    padding-top: 80px; // Push content below navbar
+}
+
+footer {
+    margin-left: 0;
+}
+
+header img {
+    width: 40px;
+    height: 40px;
+}
+
+header nav {
+    flex-direction: row;
+    gap: $spacing-small;
+}
+
+header nav a {
+    font-size: 0.9rem;
+    padding: 0.25rem 0.5rem;
+}
+}
+  
+@media (max-width: 768px) {
+.perfil-contenedor {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.contenido-perfil {
+    max-width: 100%;
+}
+}
+
+@media (max-width: 600px) {
+#habilidades .lista-habilidades {
+    flex-direction: column;
+    gap: $spacing-small;
+}
+
+#habilidades li {
+    width: 120px;
+    height: 120px;
+    font-size: 0.9rem;
+}
+}
+
+@media (max-width: 600px) {
+.tarjeta-proyecto {
+    max-width: 100%;
+    flex: 1 1 100%;
+}
+}
+
+@media (max-width: 480px) {
+#contacto form {
+    width: 100%;
+    padding: 0 $spacing-small;
+}
+}
+  
