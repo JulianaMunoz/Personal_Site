@@ -74,6 +74,13 @@ nav a:hover {
 text-decoration: underline;
 }
 
+.foto-perfil {
+width: 210px;
+height: 210px;
+border-radius: 50%;
+object-fit: cover;
+}
+
 main{
     margin-left: 400px;
     padding: $spacing-medium;
@@ -81,36 +88,58 @@ main{
 
 /* Sección Sobre mí (#perfil) */
 #perfil {
-padding: $spacing-large $spacing-medium;
-/* Flexbox para alinear la imagen de perfil y el contenido */
-display: flex;
-flex-direction: column;
-align-items: center;
-gap: $spacing-medium;
+padding: 2rem 1rem;
 }
+
 #perfil h2 {
-margin-bottom: $spacing-medium;
-color: $color-purple;
+text-align: center;
+margin-bottom: $spacing-small;
+color: $color-purple; 
+font-size: $fontSize_titulos;
 }
-.foto-perfil {
-width: 150px;
-height: 150px;
+
+.perfil-contenedor {
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+justify-content: center;
+gap: 2rem;
+flex-wrap: wrap;
+}
+
+#fotoPerfil_centro {
+width: 240px;
+height: 240px;
 border-radius: 50%;
 object-fit: cover;
 }
-#perfil .contenido-perfil {
-max-width: 600px;
+
+.contenido-perfil {
+max-width: 500px;
+text-align: justify;
 }
 
-#perfil .redes-sociales {
+.redes-sociales {
 display: flex;
-gap: $spacing-medium;
-margin-top: $spacing-small;
-justify-content: center;
+gap: 1rem;
+margin-top: 1rem;
+justify-content: flex-start;
+padding-left: 0;
+list-style: none;
 }
-#perfil .redes-sociales img {
+
+.redes-sociales img {
 width: 26px;
 height: 26px;
+}
+
+.separador{
+    background-color: $color-green;
+    color: white;
+    width: 220px;
+    height: 5px;
+    margin: 0 auto;
+    margin-bottom: $spacing-medium;
 }
 
 /* Sección Habilidades */
@@ -121,88 +150,196 @@ flex-direction: column;
 align-items: center;
 }
 #habilidades h2 {
-margin-bottom: $spacing-medium;
-color: $color-green;
+margin-bottom: $spacing-small;
+color: $color-purple;
+font-size: $fontSize_titulos;
 }
 #habilidades .lista-habilidades {
-list-style: square inside;
-max-width: 600px;
-margin: 0 auto;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: $spacing-large;
+    padding-bottom: $spacing-medium;
 }
+
+
+#habilidades p {
+    font-size: $spacing-unit;
+    margin-bottom: $spacing-unit;
+}
+
 #habilidades li {
-margin-bottom: $spacing-small;
+    background-color: $color-green;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: $spacing-unit;
+    font-weight: 500;
+    color: white;
+    box-shadow: 0 0 8px rgba(182, 182, 182, 0.1);
 }
 
 /* Sección Experiencia */
 #experiencia {
-padding: $spacing-large $spacing-medium;
+max-width: 900px;
+margin: 0 auto;
+padding: $spacing-small;
 }
+
 #experiencia h2 {
-margin-bottom: $spacing-medium;
+margin-bottom: $spacing-small;
+text-align: center;
 color: $color-purple;
+font-size: $fontSize_titulos;
 }
+
 #experiencia article {
-margin-bottom: $spacing-medium;
+background-color: #f5f5f5;
+border-left: 5px solid #7ED957;
+padding: 1.5rem;
+margin-bottom: 1.5rem;
+border-radius: 10px;
+box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+transition: transform 0.2s ease;
 }
+
+#experiencia article:hover {
+transform: translateY(-5px);
+}
+
 #experiencia h3 {
-color: $color-green;
+margin: 0;
+color: #5ca86e;
+font-size: 1.3rem;
+font-weight: 700;
+}
+
+#experiencia p {
+margin: 0.5rem 0;
+color: #333;
+font-size: 1rem;
+line-height: 1.5;
 }
 
 /* Sección Educación */
 #educacion {
 padding: $spacing-large $spacing-medium;
+display: flex;
+flex-direction: column;
 }
+
 #educacion h2 {
-margin-bottom: $spacing-medium;
+margin-bottom: $spacing-small;
+text-align: center;
 color: $color-purple;
+font-size: $fontSize_titulos;
 }
+
 #educacion article {
 margin-bottom: $spacing-medium;
 }
+
 #educacion h3 {
 color: $color-green;
 }
 
-/* Sección Portafolio */
+
+  /* Sección Portafolio */
 #portafolio {
-padding: $spacing-large $spacing-medium;
+    padding: $spacing-large $spacing-medium;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
 }
+
 #portafolio h2 {
-margin-bottom: $spacing-medium;
-color: $color-purple;
+    margin-bottom: $spacing-small;
+    text-align: center;
+    color: $color-purple;
+    font-size: $fontSize_titulos;
 }
+
+#educacion article,
 #portafolio .proyectos {
-/* Uso de Grid para mostrar los proyectos en una cuadrícula adaptable */
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+max-width: 900px;
+margin: 0 auto;
+}
+
+.proyectos {
+display: flex;
+flex-wrap: wrap;
 gap: $spacing-medium;
+justify-content: center;
 }
-#portafolio .proyectos article {
+
+.tarjeta-proyecto {
 background-color: white;
-padding: $spacing-small;
-border-radius: $border-radius;
-box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+border-radius: $border-radius * 3;
+padding: $spacing-medium;
+box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+max-width: 300px;
+flex: 1 1 250px;
+transition: transform 0.3s ease;
+text-align: left;
+
+&:hover {
+transform: translateY(-5px);
 }
-#portafolio .proyectos img {
-width: 100%;
-border-radius: $border-radius;
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: $border-radius * 2;
+}
+
+#portafolio h3 {
+    font-size: 1.2rem;
+    margin: $spacing-small 0 $spacing-small;
+    color: $color-text;
+}
+
+#portafolio p{
+    margin: 0 auto;
+    color: #333;
+    font-size: 1rem;
+    }
 }
 
 /* Sección Contacto */
 #contacto {
 padding: $spacing-large $spacing-medium;
+align-items: center;
+justify-content: center;
+display: flex;
+flex-direction: column;
 }
 #contacto h2 {
-margin-bottom: $spacing-medium;
-color: $color-green;
+margin-bottom: $spacing-small;
+text-align: center;
+color: $color-purple;
+font-size: $fontSize_titulos;
 }
+
+#contacto p{
+margin: $spacing-medium 0;
+color: #333;
+font-size: 1rem;
+line-height: 1.5;
+}
+
 #contacto form {
 display: flex;
 flex-direction: column;
-max-width: 400px;
+width: 380px;
 margin: 0 auto;
 gap: $spacing-small;
 }
+
 #contacto label {
 margin-bottom: $spacing-small;
 }

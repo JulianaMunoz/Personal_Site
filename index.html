@@ -9,7 +9,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!-- Etiquetas Open Graph -->
 <meta property="og:title" content="Portafolio de Juliana Muñoz Medina">
-<meta property="og:description" content="Soy Juliana Muñoz Medina, diseñadora web freelance. Descubre mi trabajo, experiencia y habilidades en mi portafolio.">
+<meta property="og:description" content="Soy Juliana Muñoz Medina, Ingeniera de Software in the making. Descubre mi trabajo, experiencia y habilidades en mi portafolio.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://www.ejemplo.com/portfolio-juliana">
 <meta property="og:image" content="ruta/a/imagen-portafolio.jpg">
@@ -17,12 +17,12 @@
 <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/main.css">
 </head>
-<body>
+<body itemscope itemtype="https://schema.org/Person">
 <header>
     <img src="assests/Yo.jpeg" alt="Foto de Juliana Muñoz Medina" class="foto-perfil">
     <div class="hero">
         <h1 itemprop="name">Juliana Muñoz Medina</h1>
-        <p>Ingeniera de Software</p>
+        <p itemprop="jobTitle">Ingeniera de Software</p>
     </div>
     <nav>
         <ul>
@@ -38,70 +38,93 @@
 
 <main>
 <section id="perfil">
-    <h2>Sobre Mí</h2>
-    <img src="assests/Yo.jpeg" alt="Foto de Juliana Muñoz Medina" class="foto-perfil">
+<h2>Sobre Mí</h2>
+<div class="separador">-</div>
+<div class="perfil-contenedor">
     <div class="contenido-perfil">
-    <p>¡Hola! Soy Juliana Muñoz Medina, estudio Ingeniería de Software y tengo sólida formación académica y certificaciones en redes, contenedores y operaciones. Tengo amplia experiencia en atención al cliente bilingüe (español-inglés) y soporte técnico, me considero buena en el análisis, la organización y la resolución de problemas, y siempre estoy buscando implementar soluciones tecnológicas eficientes y divertidas.</p>
+    <p itemprop="description">
+        ¡Hola! Soy Juliana Muñoz Medina, estudio Ingeniería de Software y tengo sólida formación académica y certificaciones en redes, contenedores y análisis de datos con Python. Tengo amplia experiencia en atención al cliente bilingüe (español-inglés) y soporte técnico, me considero buena en el análisis, la organización y la resolución de problemas, y siempre estoy buscando implementar soluciones tecnológicas eficientes y divertidas.
+    </p>
     <ul class="redes-sociales">
-        <div><a href="https://www.linkedin.com/in/juliana-mu%C3%B1oz-medina-629ba1279/" target="_blank" rel="noopener"><img src="/assests/linkedin (1).png" alt="Perfil de LinkedIn"></a></div>
-        <div><a href="https://github.com/JulianaMunoz" target="_blank" rel="noopener"><img src="/assests/github.png" alt="Perfil de GitHub"></a></div>
-        <div><a href="mailto:julianamunozmedina@outlook.com"><img src="/assests/email.png" alt="Enviar email"></a></div>
+        <li><a href="https://www.linkedin.com/in/juliana-mu%C3%B1oz-medina-629ba1279/" target="_blank" rel="noopener" itemprop="sameAs"><img src="/assests/linkedin (1).png" alt="Perfil de LinkedIn"></a></li>
+        <li><a href="https://github.com/JulianaMunoz" target="_blank" rel="noopener" itemprop="sameAs"><img src="/assests/github.png" alt="Perfil de GitHub"></a></li>
+        <li><a href="mailto:julianamunozmedina@outlook.com" itemprop="email"><img src="/assests/email.png" alt="Enviar email"></a></li>
     </ul>
     </div>
+    <img src="assests/yo_colorful.jpeg" alt="Foto de Juliana Muñoz Medina" class="foto-perfil" id="fotoPerfil_centro">
+</div>
 </section>
+
 <section id="habilidades">
     <h2>Habilidades</h2>
+    <div class="separador">-</div>
     <p>Conoce mis principales habilidades y tecnologías que manejo:</p>
     <ul class="lista-habilidades">
-    <li>HTML5, CSS3 y JavaScript</li>
-    <li>Frameworks: React, Vue.js</li>
-    <li>Herramientas de diseño: Adobe XD, Figma</li>
-    <li>Optimización SEO y accesibilidad web</li>
+    <li itemprop="knowsAbout">HTML5, CSS3 y JavaScript</li>
+    <li itemprop="knowsAbout">Frameworks: React, Django</li>
+    <li itemprop="knowsAbout">Herramientas de diseño: Blender, Figma</li>
+    <li itemprop="knowsAbout">Optimización SEO y accesibilidad web</li>
+    </ul>
+    <ul class="lista-habilidades">
+    <li itemprop="knowsAbout">Java, C# y Python</li>
+    <li itemprop="knowsAbout">Analisis de Datos con Librerias Python</li>
+    <li itemprop="knowsAbout">Contenerización con Docker</li>
+    <li itemprop="knowsAbout">Infraestructura de Redes, Switching y Routing</li>
     </ul>
 </section>
-<section id="experiencia">
+<section id="experiencia" itemscope itemtype="https://schema.org/Organization">
     <h2>Experiencia</h2>
+    <div class="separador">-</div>
     <article>
-    <h3>Diseñadora Web Senior</h3>
-    <p><time datetime="2020">2020</time> - Actualidad en Empresa XYZ</p>
-    <p>Desarrollo y mantenimiento del sitio web corporativo, mejorando la experiencia de usuario y velocidad de carga.</p>
+    <h3 itemprop="name">Connected Home Blended Expert</h3>
+    <p><time datetime="2024">Enero 2024</time> - <time datetime="2025">Abril 2025</time> en Asurion Colombia</p>
+    <p itemprop="description">Desarrollo y mantenimiento del sitio web corporativo, mejorando la experiencia de usuario y velocidad de carga.</p>
     </article>
     <article>
-    <h3>Diseñadora Web Junior</h3>
-    <p><time datetime="2018">2018</time> - <time datetime="2020">2020</time> en Empresa ABC</p>
-    <p>Creación de interfaces web responsivas para clientes, con énfasis en usabilidad y diseño visual.</p>
+    <h3 itemprop="name">Fullstack Developer for a StartUp</h3>
+    <p><time datetime="2024">Noviembre 2024</time> - <time datetime="2025">Abril 2025</time> en Spot</p>
+    <p itemprop="description">Creación de interfaces web responsivas para clientes, con énfasis en usabilidad y diseño visual.</p>
+    </article>
+    <article>
+    <h3 itemprop="name">Operations Customer Expert</h3>
+    <p><time datetime="2025">Abril 2025</time> - Actualidad en Teleperformance</p>
+    <p itemprop="description">Creación de interfaces web responsivas para clientes, con énfasis en usabilidad y diseño visual.</p>
     </article>
 </section>
-<section id="educacion">
-    <h2>Educación</h2>
-    <article>
-    <h3>Licenciatura en Diseño Gráfico</h3>
-    <p>Universidad del Diseño, <time datetime="2018">2018</time></p>
-    </article>
+
+<section id="educacion" itemprop="alumniOf" itemscope itemtype="https://schema.org/EducationalOrganization">
+<h2 class="titulo-seccion">Educación</h2>
+<div class="separador">-</div>
+<article>
+    <h3 itemprop="name">Pregrado en Ingeniería de Software</h3>
+    <p>Universidad Manuela Beltrán, Desde <time datetime="2021">2021</time></p>
+</article>
 </section>
+
 <section id="portafolio">
-    <h2>Portafolio</h2>
-    <p>Algunos de mis proyectos recientes:</p>
-    <div class="proyectos">
-    <article>
-        <img src="ruta/a/proyecto1.jpg" alt="Proyecto 1: Rediseño de sitio web de comercio electrónico">
-        <h3>Proyecto 1</h3>
-        <p>Rediseño completo de la tienda en línea de un cliente, mejorando la navegación y la conversión.</p>
+<h2 class="titulo-seccion">Portafolio</h2>
+<div class="separador">*</div>
+<p>Algunos de mis proyectos recientes:</p>
+<div class="proyectos">
+    <article class="tarjeta-proyecto">
+    <h3>Proyecto 1</h3>
+    <p>Rediseño completo de la tienda en línea de un cliente, mejorando la navegación y la conversión.</p>
     </article>
-    <article>
-        <img src="ruta/a/proyecto2.jpg" alt="Proyecto 2: Aplicación móvil educativa">
-        <h3>Proyecto 2</h3>
-        <p>Diseño y desarrollo de una aplicación móvil para aprendizaje de idiomas, enfocada en experiencia de usuario.</p>
+    <article class="tarjeta-proyecto">
+    <h3>Proyecto 2</h3>
+    <p>Diseño y desarrollo de una aplicación móvil para aprendizaje de idiomas, enfocada en experiencia de usuario.</p>
     </article>
-    <article>
-        <img src="ruta/a/proyecto3.jpg" alt="Proyecto 3: Sitio web corporativo para ONG">
-        <h3>Proyecto 3</h3>
-        <p>Diseño de la página web para una organización sin fines de lucro, con énfasis en accesibilidad y contenido claro.</p>
+    <article class="tarjeta-proyecto">
+    <h3>Proyecto 3</h3>
+    <p>Diseño de la página web para una organización sin fines de lucro, con énfasis en accesibilidad y contenido claro.</p>
     </article>
-    </div>
+</div>
 </section>
+
+
 <section id="contacto">
     <h2>Contacto</h2>
+    <div class="separador">-</div>
     <p>¿Tienes algún proyecto en mente o quieres saludar? ¡Envíame un mensaje!</p>
     <form action="#" method="post">
     <label for="nombre">Nombre:</label>

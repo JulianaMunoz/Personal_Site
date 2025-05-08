@@ -21,3 +21,20 @@ dejar dos botones accionables, call to action, que abra la pagina del correo o u
 
 #TrabajoFinal
 Construir un catalogo de productos con todos los estandares, puede ser de noticias o eventos.
+
+
+PROYECTOS PORTA.
+-->Para buscar y subir a git:
+- Agromarket.
+- Juego de estructura de datos.
+- Subir mis diseños de spot a un lugar.
+- Sistemas de registro de empleados bases de datos.
+
+- juego de 2d, computacion **Agregar el sistema de puntuacion y el de perder y ganar, tambien las pistas**
+
+ideas.
+- wheels.
+- alarma con playlists de youtube.
+- password manager.
+- script para bloquear juegos y desbloquear.
+- juego de computacion cuando lo termine.
