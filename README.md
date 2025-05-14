@@ -38,3 +38,19 @@ ideas.
 - password manager.
 - script para bloquear juegos y desbloquear.
 - juego de computacion cuando lo termine.
+
+
+
+<!-- Google tag (gtag.js) -->
+<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y599NB91GD"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Y599NB91GD');
+</script> -->
+
+
+Importante para lo del tag manager, es tener acceso a los id del dom.
+- Funciona como un 
