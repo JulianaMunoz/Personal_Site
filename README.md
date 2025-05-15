@@ -73,3 +73,5 @@ parametros para su contrucción:
 - campaign name, 
 - campaign term,
 - campaign content,
+
+la semana entrante vamos a hacer una actividad sencilla para equilibrar notas.
