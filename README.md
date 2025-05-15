@@ -54,3 +54,22 @@ ideas.
 
 Importante para lo del tag manager, es tener acceso a los id del dom.
 - Funciona como un 
+
+
+Tarea, un banner, pieza grafica promocional, intercambiar banners. Averiguar que es UTM, para que nos ayuden a marcar eso.
+
+Para que un website sea conocido se puede hacer de 2 formas:
+1. pagar por palabras claves y visualizacion.
+2. un SEO re pro que nos de trafico organico.
+
+con el UTM podemo ver que nos funciona mas.
+
+Help to do it: https://ga-dev-tools.google/campaign-url-builder/ 
+
+parametros para su contrucción:
+- campaign ID, usualmente las empresas de publicidad generan muchas campañas entonces como si fuera un producto estan tiene un identificador unico, esto me permite agrupar para saber a que campaña pertencen los registros.
+- campaign source, nos permite saber desde nos visita el vx, puede ser desde una red social, un news letter, etc.
+- campaign medium, hay muchos espacios publicitarios en una pagina y cada uno cuesta distinto, con este espacio vemos de que parte de la pauta el vx esta llegando, nos ayuda a saber que de todo lo que pagamos actually is worth it and works out the most for me. 
+- campaign name, 
+- campaign term,
+- campaign content,
