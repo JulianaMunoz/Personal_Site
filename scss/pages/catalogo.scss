@@ -1,0 +1,52 @@
+    
+.body_catalogo {
+    background-color: #f8f9fa;
+    padding-bottom: 5%;
+}
+
+.ElementoGeneral {
+    width: 300px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    margin: auto;
+}
+
+.PrimeraParte img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.segundaParte {
+    padding: 15px;
+}
+
+.segundaParte h2 {
+    margin-bottom: 10px;
+    color: $color-purple_hover;
+}
+
+.segundaParte p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+.ParteInferior {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.Precio {
+    font-size: 14px;
+    font-weight: bold;
+    color: #28a745;
+}

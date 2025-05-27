@@ -1,0 +1,15 @@
+@import '../base/variables.scss';
+
+.ParteInferior button {
+border: none;
+background-color: $color-purple;
+color: white;
+padding: 6px 12px;
+border-radius: 4px;
+cursor: pointer;
+font-size: 13px;
+transition: background-color 0.3s;
+}
+.ParteInferior button:hover {
+background-color: $color-purple_hover;
+}

@@ -19,7 +19,7 @@ min-height: 100vh;
 }
 
 /* Navegación principal en el header */
-header {
+#csv_header{
     display: flex;
     flex-direction: column;
     background-color: $color-purple;
@@ -271,6 +271,24 @@ gap: $spacing-medium;
 justify-content: center;
 }
 
+.proyectos button{
+    margin-top:flex;
+    background: $color-purple;
+    color:#fff;
+    border:none;
+    border-radius:20px;
+    padding:10px;
+    width:100%;
+    font-size:1rem;
+    font-weight:700;
+    cursor:pointer;
+    box-shadow:0 1px 4px rgba(0,0,0,0.07);
+    transition:background 0.2s;
+    display:block;
+    letter-spacing:0.5px;
+    margin: 5px;
+}
+
 .tarjeta-proyecto {
 background-color: white;
 border-radius: $border-radius * 3;
@@ -357,6 +375,56 @@ cursor: pointer;
 background-color: darken($color-green, 10%);
 }
 
+/*seccion amigos*/
+#amigos h2 {
+    margin-bottom: $spacing-small;
+    text-align: center;
+    color: $color-purple;
+    font-size: $fontSize_titulos;
+}
+
+#amigos {
+    padding: $spacing-large $spacing-medium;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+}
+
+#amigos a{
+    display:inline-block;
+    width:240px;
+    height:240px;
+    background: #FDF8F0;
+    border-radius: 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    border: 2px solid #e0e0e0;
+    overflow: hidden;
+    text-decoration: none;
+    position: relative;
+    font-family: 'Montserrat', Arial, sans-serif;
+    margin: 20px;
+}
+
+#amigos button{
+    margin-top:flex;
+    background: $color-purple;
+    color:#fff;
+    border:none;
+    border-radius:20px;
+    padding:10px 0;
+    width:100%;
+    font-size:1rem;
+    font-weight:700;
+    cursor:pointer;
+    box-shadow:0 1px 4px rgba(0,0,0,0.07);
+    transition:background 0.2s;
+    display:block;
+    letter-spacing:0.5px;
+    padding-bottom: 5px;
+}
+
+
+
 /* Pie de página (footer) */
 footer {
     text-align: center;
@@ -369,8 +437,8 @@ footer {
 
 
 /*Responsive changes*/
-@media (max-width: 768px) {
-header {
+@media (max-width: 960px) {
+#csv_header{
     position: fixed;
     top: 0;
     left: 0;
@@ -407,6 +475,13 @@ header nav a {
     font-size: 0.9rem;
     padding: 0.25rem 0.5rem;
 }
+
+#tarjetas_amigos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 }
 
   
@@ -426,7 +501,7 @@ header nav a {
 }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 670px) {
 #habilidades .lista-habilidades {
     flex-direction: column;
     gap: $spacing-small;
