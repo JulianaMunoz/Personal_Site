@@ -465,6 +465,18 @@ footer {
     height: 0px;
 }
 
+#fotoPerfil_centro {
+width: 230px;
+height: 230px;
+border-radius: 50%;
+object-fit: cover;
+}
+
+#amigos img{
+    width: 80px;
+    height: 80px;
+}
+
 header nav ul{
     flex-direction: row;
     flex-wrap: wrap;
